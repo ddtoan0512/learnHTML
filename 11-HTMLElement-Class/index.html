@@ -1,0 +1,41 @@
+<!-- 
+ HTMLElement 
+    .children       (Element)
+    .textContent    (Node)
+
+    .appendChild()  (Node)
+    .remove()       (Element)
+
+    document.createElement()
+-->
+<!DOCTYPE html>
+<html>
+<head> <!-- document.head-->
+    <meta charset="utf-8" />
+    <title>TODO List</title>
+</head>
+
+<body> <!-- document.body-->
+    <h1>TODO List</h1>
+
+    <ul id="todo-list">
+        <li>HairCut</li>
+        <li>Lunch with Sora</li>
+        <li id="dinner-maria">Dinner with Maria</li>
+    </u>
+
+    <script type="text/javascript">
+        var todoList = document.getElementById('todo-list');
+        console.log(todoList);
+        var newTodo = document.createElement('li');
+        newTodo.textContent = 'Playing Game with Friend';
+        
+        todoList.appendChild(newTodo);
+
+        var dinner = document.getElementById('dinner-maria');
+        dinner.remove();
+
+    </script>
+</body>
+
+</html>
